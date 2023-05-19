@@ -115,7 +115,7 @@ class BMP384:
     .. code-block:: python
 
         i2c = board.I2C()  # uses board.SCL and board.SDA
-        bmp = BMP384.bmp384(i2c)
+        bmp = bmp384.BMP384(i2c)
 
     Now you have access to the attributes
 
@@ -170,13 +170,13 @@ class BMP384:
             "FORCED_MODE",
             "NORMAL_MODE",
         )
-        return values[self._power_mode]
+        return values[self._operation_mode]
 
     @power_mode.setter
     def power_mode(self, value: int) -> None:
         if value not in power_mode_values:
             raise ValueError("Value must be a valid power_mode setting")
-        self._power_mode = value
+        self._operation_mode = value
 
     @property
     def temperature_mode(self) -> str:
