@@ -15,7 +15,7 @@ while True:
     for temperature_oversample in bmp384.temperature_oversample_values:
         print("Current Temperature oversample setting: ", bmp.temperature_oversample)
         for _ in range(10):
-            temp = bmp.temperature
-            print("temperature:{:.2f}C".format(temp))
+            print("ftemperature:{bmp.temperature:.2f}°C")
+            print()
             time.sleep(0.5)
         bmp.temperature_oversample = temperature_oversample

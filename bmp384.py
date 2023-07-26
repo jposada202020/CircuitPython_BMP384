@@ -8,7 +8,7 @@
 CircuitPython Driver for the Bosch BMP384 Pressure and Temperature sensor
 
 
-* Author(s): Jose D. Montoya
+* Author: Jose D. Montoya
 
 
 """
@@ -363,7 +363,7 @@ class BMP384:
     @property
     def temperature(self) -> float:
         """
-        The temperature sensor in C
+        The temperature sensor in Celsius
         :return: Temperature
         """
         # pylint: disable = invalid-name, too-many-locals

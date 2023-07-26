@@ -15,7 +15,7 @@ while True:
     for pressure_oversample in bmp384.pressure_oversample_values:
         print("Current Pressure oversample setting: ", bmp.pressure_oversample)
         for _ in range(10):
-            press = bmp.pressure
-            print("pressure:{:.2f}hPa".format(press))
+            print(f"Pressure: {bmp.pressure:.2f}hPa")
+            print()
             time.sleep(0.5)
         bmp.pressure_oversample = pressure_oversample

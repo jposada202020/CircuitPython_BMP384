@@ -3,35 +3,25 @@
 # SPDX-License-Identifier: MIT
 
 [build-system]
-requires = [
-    "setuptools",
-    "wheel",
-    "setuptools-scm",
-]
+requires = ["setuptools", "wheel", "setuptools-scm"]
 
 [project]
 name = "circuitpython-bmp384"
 description = "CircuitPython Driver for the Bosch BMP384 Pressure and Temperature sensor"
 version = "0.0.0+auto.0"
 readme = "README.rst"
-authors = [
-    {name = "Jose D. Montoya", email = "jlib@mailmeto.mozmail.com"}
-]
-urls = {Homepage = "https://github.com/jposada202020/CircuitPython_BMP384"}
+authors = [{ name = "Jose D. Montoya", email = "jlib@mailmeto.mozmail.com" }]
+urls = { Homepage = "https://github.com/jposada202020/CircuitPython_BMP384" }
 keywords = [
     "sensor",
-    "blinka",
     "circuitpython",
-    "micropython",
-    "bmp384",
     "pressure",
     "temperature",
     "driver",
-    "sensor",
     "bosch",
     "bmp384",
 ]
-license = {text = "MIT"}
+license = { text = "MIT" }
 classifiers = [
     "Intended Audience :: Developers",
     "Topic :: Software Development :: Libraries",
@@ -46,5 +36,5 @@ dynamic = ["dependencies", "optional-dependencies"]
 py-modules = ["bmp384"]
 
 [tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
-optional-dependencies = {optional = {file = ["optional_requirements.txt"]}}
+dependencies = { file = ["requirements.txt"] }
+optional-dependencies = { optional = { file = ["optional_requirements.txt"] } }

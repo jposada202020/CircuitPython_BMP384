@@ -15,7 +15,7 @@ while True:
     for filter_coefficients in bmp384.filter_coefficients_values:
         print("Current Filter coefficients setting: ", bmp.filter_coefficients)
         for _ in range(10):
-            press = bmp.pressure
-            print("pressure:{:.2f}hPa".format(press))
+            print(f"Pressure: {bmp.pressure:.2f}hPa")
+            print()
             time.sleep(0.5)
         bmp.filter_coefficients = filter_coefficients

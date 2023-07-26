@@ -10,5 +10,6 @@ i2c = board.I2C()  # uses board.SCL and board.SDA
 bmp = bmp384.BMP384(i2c)
 
 while True:
-    print("Pressure: {:.2f}hPa".format(bmp.pressure))
+    print(f"Pressure: {bmp.pressure:.2f}hPa")
+    print()
     time.sleep(0.5)
