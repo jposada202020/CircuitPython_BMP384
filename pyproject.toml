@@ -10,7 +10,7 @@ name = "circuitpython-bmp384"
 description = "CircuitPython Driver for the Bosch BMP384 Pressure and Temperature sensor"
 version = "0.0.0+auto.0"
 readme = "README.rst"
-authors = [{ name = "Jose D. Montoya", email = "jlib@mailmeto.mozmail.com" }]
+authors = [{ name = "JDM", email = "jdm@mozmail.com" }]
 urls = { Homepage = "https://github.com/jposada202020/CircuitPython_BMP384" }
 keywords = [
     "sensor",
